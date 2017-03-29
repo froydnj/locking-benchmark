@@ -80,5 +80,9 @@ main(int argc, char** argv)
 
   pthread_mutex_unlock(&state.mLock);
 
+  for (unsigned i = 0; i < nThreads; ++i) {
+    pthread_join(threadStates[i]->mThreadHandle, nullptr);
+  }
+
   return 0;
 }
