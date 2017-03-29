@@ -1,3 +1,6 @@
+// Copied from https://trac.webkit.org/browser/trunk/Source/WTF/benchmarks/LockFairnessTest.cpp?rev=200444
+// but with less giant framework required.
+
 #include <pthread.h>
 #include <stdio.h>
 #include <unistd.h>
